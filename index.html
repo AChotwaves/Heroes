@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>hero</title>
+		<meta charset="utf-8">
+		<meta name="author" content="John Baker">
+		<meta name="description" content="">
+		<style>
+			#container{
+				width: 100%;
+				margin-left: auto;
+				margin-right: auto;
+			}
+		
+			.row{
+				display: flex;
+				flex-direction:row;
+				justify-content: space-between;
+				align-itmes: flex-start;
+				flex-wrap: wrap;
+			}
+			
+			.hero{
+				flex: 0 0 250px;
+				width: 100%;
+				height: 250px;
+				color:#f0f0f0;
+				
+				
+				transition: 1.0s;
+				transform-style: preserve-3d;
+				position: relative;
+			}
+			.hero h1, .hero p{
+				margin-top: 0px;
+				margin-bottom 0px;
+				margin-left: 15px;
+			}
+			
+			.front h1{
+				font-size: 20px;
+				margin-top: 190px;
+				
+			}
+			
+			.front h1, .back .name{
+				color: goldenrod;
+			}
+			
+			.front, .back{
+				backface-visibility: hidden;
+				position: absolute;
+				top: 0px;
+				left:0px;
+				height: 250px;
+				width:100%;
+			}
+			
+			.front{
+				background-size: cover;
+				transform: rotateY(0deg);
+			}
+		
+		
+			.back{
+				background-color: #123456;
+				transform: rotateY(180deg);
+			}
+			
+			.back p.name{
+				margin-top: 75px;
+			}
+		
+			.hero p{
+				font-size:12px;
+				color:white;
+			}
+			
+			.hero:hover{
+				transform: rotateY(180deg);
+			}
+			#one .front{background-image:url('Rhinoceratops.png')}
+			#two .front{background-image:url('shieldguy.png')}
+			#three .front{background-image:url('Warden.png')}
+			#four .front{background-image:url('Harmbe.png')}
+		</style>
+	</head>
+	<body>
+	<div id="container">
+		<div class="row">
+		
+		<div class="hero" id="one">
+			<div class="front">
+				<h1>Rhinoceratops</h1>
+				<p>stuff</p>
+			</div>
+			
+			<div class="back">
+				<p class="name">Rhinoceratops</p>
+				<p> A rhino and a dino</p>
+			</div>
+		</div>
+			
+		<div class="hero" id="two">
+			<div class="front">
+				<h1>Shield Hero</h1>
+				<p>stuff</p>
+			</div>
+			
+			<div class="back">
+				<p class="name">Shield</p>
+				<p>Big shield</p>
+			</div>
+		</div>
+		<div class="hero" id="three">
+			<div class="front">
+				<h1>Warden</h1>
+				<p>Chains and more chains</p>
+			</div>
+			
+			<div class="back">
+				<p class="name">Warden</p>
+				<p>Ceil block 2 torture room</p>
+			</div>
+		</div>
+		<div class="hero" id="four">
+			<div class="front">
+				<h1>Harmbe</h1>
+				<p>stuff</p>
+			</div>
+			
+			<div class="back">
+				<p class="name">Harmbe</p>
+				<p> All it took was one child</p>
+			</div>
+		</div>
+	</div>
+	</body>
+	
+	
+	
+
+	
+<html>		
